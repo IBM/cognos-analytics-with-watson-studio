@@ -173,12 +173,12 @@ WIC is the Woman, Infant, Children program that provides nutrious foods for expe
 * PCT_REDUCED_LUNCH10 - Percentage of reduced lunches in schools
 * PCT_DIABETES_ADULTS10 - Percentage of adult population with diabetes
 * PCT_OBESE_ADULTS10 - Percentage of adult population that is obese
-* FOODINSEC_10_12 
+* FOODINSEC_10_12
 * PCT_OBESE_CHILD11 - Percentage of children in the population that is obese
 * PCT_LACCESS_POP10
 * PCT_LACCESS_CHILD10
 * PCT_LACCESS_SENIORS10
-* SNAP_PART_RATE10" - SNAP Participation Rate
+* SNAP_PART_RATE10 - SNAP Participation Rate
 * PCT_LOCLFARM07
 * FMRKT13
 * PCT_FMRKT_SNAP13
@@ -199,7 +199,7 @@ WIC is the Woman, Infant, Children program that provides nutrious foods for expe
 * PCT_NHASIAN10 - Percentage of the poluation that is asian
 * PCT_65OLDER10 - Percentage of the poluation that is 65 or older
 * PCT_18YOUNGER10 - Percentage of the poluation that is 18 or younger
-* POVRATE10 - 
+* POVRATE10 -
 * CHILDPOVRATE10
 
 ## 10. Write out data using Cognos Analytics connection
@@ -215,4 +215,3 @@ Once complete, you should see the file in your Cognos Analytics instance.
 ![](doc/source/images/ca-new-data-file.png)
 
 ## 11. Visualize the data in Cognos Analytics
-
