@@ -1,5 +1,11 @@
 # !!! WORK IN PROGRESS
 
+## Flow
+
+## Included Components
+
+## Steps
+
 ## 1. Clone the repo
 
 ```bash
@@ -16,7 +22,7 @@ git clone https://github.com/IBM/cognos-analytics-with-watson-studio.git
 
 * From the file selection dialog, select the extracted csv file. In this example, the file has been loaded into the `cognos-studio-data` folder.
 
-  ![](doc/source/images/ca-data-file.png)
+  ![ca-data-file](doc/source/images/ca-data-file.png)
 
 ## 3. Create a new Watson Studio project
 
@@ -38,15 +44,15 @@ Upon a successful project creation, you are taken to the project Overview tab. T
 
 * From you Watson Studio project dashboard, click `Add to project +`, and select the `Connection` option.
 
-  ![](doc/source/images/connection-option.png)
+  ![connection-option](doc/source/images/connection-option.png)
 
 * Select `Cognos Analytics` as the data source.
 
-  ![](doc/source/images/connection-types.png)
+  ![connection-types](doc/source/images/connection-types.png)
 
 * Configure the connection to point to your Cognos Analytics instance. Provide a name for your connection, plus `namespace`, `username/password`, and `URL`.
 
-  ![](doc/source/images/create-connection.png)
+  ![create-connection](doc/source/images/create-connection.png)
 
 * Click the `Create` button.
 
@@ -54,48 +60,48 @@ Upon a successful project creation, you are taken to the project Overview tab. T
 
 * From you Watson Studio project dashboard, click `Add to project +`, and select the `Connected data` option.
 
-  ![](doc/source/images/connected-data-option.png)
+  ![connected-data-option](doc/source/images/connected-data-option.png)
 
 * Click `Select source` to view the available connections.
 
 * From the `Select connection source` panel, select the connection you created in the previous step. Then select the path to the data file on Cognos Analytics.
 
-![](doc/source/images/select-connector-path.png)
+![select-connector-path](doc/source/images/select-connector-path.png)
 
 * Click `Select` to select the connection source path.
 
 * From the `New connected data asset` panel, name the path and click `Create`.
 
-![](doc/source/images/add-connected-path.png)
+![add-connected-path](doc/source/images/add-connected-path.png)
 
 * At this point, you should have a `Connection` and a `Folder Asset` in your list of project assets.
 
-![](doc/source/images/project-data-assets.png)
+![project-data-assets](doc/source/images/project-data-assets.png)
 
 ## 6. Create data access token
 
 * From you Watson Studio project dashboard, selected the `Settings` tab.
 
-![](doc/source/images/settings-tab.png)
+![settings-tab](doc/source/images/settings-tab.png)
 
 * Scroll down to the `Access tokens` list, and click on `New token +`.
 
-![](doc/source/images/project-tokens.png)
+![project-tokens](doc/source/images/project-tokens.png)
 
 * Provide a name for your token and set the access level to `Editor`.
 
-![](doc/source/images/create-token.png)
+![create-token](doc/source/images/create-token.png)
 
 * Click the `Create` button.
 * To view the token value, select the action menu located on the right-hand side of the token row, and click on `View`.
 
-![](doc/source/images/new-token.png)
+![new-token](doc/source/images/new-token.png)
 
 ### 7. Create the notebook in Watson Studio
 
 * From the new project `Overview` tab, click `+ Add to project` on the top right and choose the `Notebook` asset type.
 
-  ![add_notebook.png](doc/source/images/add-notebook.png)
+  ![add-notebook.png](doc/source/images/add-notebook.png)
 
 * Fill in the following information:
 
@@ -108,7 +114,7 @@ Upon a successful project creation, you are taken to the project Overview tab. T
   https://raw.githubusercontent.com/IBM/cognos-analytics-with-watson-studio/master/notebooks/diet-related-disease.ipynb
   ```
 
-  ![new_notebook](doc/source/images/new-notebook.png)
+  ![new-notebook](doc/source/images/new-notebook.png)
 
 * Click the `Create` button.
 
@@ -118,7 +124,7 @@ Upon a successful project creation, you are taken to the project Overview tab. T
 
 * After creation, the notebook will automatically be loaded into the nodebook runtime environment. You can re-run the notebook at any time by clicking on the `pencil` edit icon displayed in right-hand column of the notebook row.
 
-  ![new_notebook](doc/source/images/start-notebook.png)
+  ![start-notebook](doc/source/images/start-notebook.png)
 
 * The second cell of the notebook should be labeled as a `@hidden_cell`. This is where will load in our Cognos Analytics `csv` file.
 
@@ -128,7 +134,7 @@ Upon a successful project creation, you are taken to the project Overview tab. T
 
 * Place your cursor at the bottom of the `@hidden_cell` (indicated by the red arrow), then select `insert to code`, and click on the `pandas DataFrame` option.
 
-  ![](doc/source/images/notebook-add-data.png)
+  ![notebook-add-data](doc/source/images/notebook-add-data.png)
 
 * The `@hidden_cell` should now contain the access token and data connector that will allow you to load your Cognos Analytics `csv` file.
 
@@ -136,9 +142,10 @@ Upon a successful project creation, you are taken to the project Overview tab. T
 
 * Change the path and file name to point to your Cognos Analytics data.
 
-  ![](doc/source/images/notebook-data-cell.png)
+  ![notebook-data-cell](doc/source/images/notebook-data-cell.png)
 
   > **TIP**: To search the data files that your connector points to,  run the following command in the cell:
+  >
   >```python
   >CADataConnector.search_data("keyword")
   >```
@@ -208,10 +215,10 @@ Once we have refined our DataFrame, we can use the connection to write the data 
 
 In this example, we are writing it out to a file named `focused_data.csv`.
 
-![](doc/source/images/notebook-save-data.png)
+![notebook-save-data](doc/source/images/notebook-save-data.png)
 
 Once complete, you should see the file in your Cognos Analytics instance.
 
-![](doc/source/images/ca-new-data-file.png)
+![ca-new-data-file](doc/source/images/ca-new-data-file.png)
 
 ## 11. Visualize the data in Cognos Analytics
