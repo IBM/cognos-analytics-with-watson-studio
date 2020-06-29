@@ -8,7 +8,7 @@ For this particular Code Pattern, the focus is on food insecurity throughout the
 
 The government data that is used in this Code Pattern has been conveniently combined into a dataset for our use, which you can find in this repo under combined_data.csv.zip. You can find the original, government data from the [US Bureau of Labor Statistics](https://www.bls.gov/cex) and [The United States Department of Agriculture](https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/).
 
-TODO: Blurb on Cognos Analytics and new integration feature with Watson Studio
+> TODO: Blurb on Cognos Analytics and new integration feature with Watson Studio
 
 ![architecture](doc/source/images/architecture.png)
 
