@@ -1,5 +1,4 @@
-CUSTOMERID,CHECKINGSTATUS,LOANDURATION,CREDITHISTORY,LOANPURPOSE,LOANAMOUNT,EXISTINGSAVINGS,EMPLOYMENTDURATION,INSTALLMENTPERCENT,SEX,OTHERSONLOAN,CURRENTRESIDENCEDURATION,OWNSPROPERTY,AGE,INSTALLMENTPLANS,HOUSING,EXISTINGCREDITSCOUNT,JOB,DEPENDENTS,TELEPHONE,FOREIGNWORKER,RISK
-ea73218a-59e5-4067-99a1-2201e9fdd79b,no_checking,37,prior_payments_delayed,other,7945,500_to_1000,1_to_4,4,male,none,4,savings_insurance,39,none,own,2,management_self-employed,1,none,yes,No Risk
+CustomerID,CheckingStatus,LoanDuration,CreditHistory,LoanPurpose,LoanAmount,ExistingSavings,EmploymentDuration,InstallmentPercent,Sex,OthersOnLoan,CurrentResidenceDuration,OwnsProperty,Age,InstallmentPlans,Housing,ExistingCreditsCount,Job,Dependents,Telephone,ForeignWorker,Risk
 4e561ef3-a927-4107-aa12-18ac5772ec63,less_0,6,all_credits_paid_back,car_used,250,less_100,1_to_4,2,male,none,2,savings_insurance,28,stores,rent,1,skilled,1,none,yes,Risk
 2663eaee-4f6b-4c84-b816-0b589b6690c8,less_0,14,all_credits_paid_back,appliances,1431,less_100,unemployed,1,female,none,1,car_other,25,stores,own,1,skilled,1,none,yes,Risk
 c1324b0f-7b7d-42d5-896b-ee81988e54f3,greater_200,5,credits_paid_to_date,car_used,250,less_100,4_to_7,3,male,none,2,savings_insurance,42,none,rent,1,skilled,1,none,yes,No Risk
