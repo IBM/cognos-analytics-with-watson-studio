@@ -241,9 +241,9 @@ From the Cognos Analytics main dashboard, select the `+` icon in the lower left 
 
 From the file selection dialog, select the two `CSV` files related to new credit applications. In this example, the file names are:
 
-  * `german_credit_model_data.csv` - the original data set used to create our scoring model.
-  * `german_credit_new_apps_data.csv` - new credit applications that are to be scored.
-  * `german_credit_new_apps_scored.csv` - new credit application scores.
+* `german_credit_model_data.csv` - the original data set used to create our scoring model.
+* `german_credit_new_apps_data.csv` - new credit applications that are to be scored.
+* `german_credit_new_apps_scored.csv` - new credit application scores.
 
   ![ca-create-data-module](doc/source/images/ca-create-data-module.png)
 
