@@ -2,7 +2,7 @@
 
 This code pattern showcases the integration between Watson Studio and Cognos Analytics by guiding the user through an examination of credit risk related data.
 
-Using the data, the Data Scientist refines the data and builds a model using Watsom Machine Learning. This model is then used to score new credit applications to determine if they are a risk or not. The results are then fed into Cognos Analytics, where a Business Analyst can create visualizations to provide insights about the factors that most influence the credit worthiness of the applicants.
+The Data Scientist refines the data and builds a model using Watson Machine Learning. The model is then used to score new credit applications to determine if they are a risk or not. The results are then fed into Cognos Analytics, where a Business Analyst can create visualizations to provide insights about the factors that most influence the credit worthiness of the applicants.
 
 Data is easily transferred between Watson Studio and Cognos Analytics using a feature of Studio called a `Data Connector`. It provides notebooks the ability to read and write data to a Cognos Analytics instance.
 
@@ -157,7 +157,7 @@ Upon a successful project creation, you are taken to the project Overview tab. T
 
   ![start-notebook](doc/source/images/start-notebook.png)
 
-* The second cell of the notebook should be labeled as a `@hidden_cell`. This is where will load in our Cognos Analytics `CSV` file.
+* The second cell of the notebook should be labeled as a `@hidden_cell`. This is where we will load in our Cognos Analytics `CSV` file.
 
   >**Note**: This cell is marked as a `@hidden_cell` because it will contain sensitive credentials.
 
@@ -294,7 +294,7 @@ From the image above:
 * [6] Toggles display of the filter panels.
 * [7] Displays the fields associated with the selected visual object.
 * [8] Displays the properties associated with the selected visual object.
-* [9] Filters that can be applied to dashboard visual objects. The filter can be set for all dashboard tabs (left side), or for the current tab (righ side).
+* [9] Filters that can be applied to dashboard visual objects. The filter can be set for all dashboard tabs (left side), or for the current tab (right side).
 
 The types of visualizations available include the following:
 
@@ -302,7 +302,7 @@ The types of visualizations available include the following:
 
 #### Spiral visualization to show main drivers to determine credit risk
 
-Our first visualizaation we will be a spiral which will rank how important each of the drivers are in determining credit risk.
+Our first visualization we will be a spiral which will rank how important each of the drivers are in determining credit risk.
 
 Select the `PredictedRisk` field in the `german_credit_risk_new_apps_scored` file in the data source list and drag it onto the canvas.
 
